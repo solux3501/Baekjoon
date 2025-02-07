@@ -41,3 +41,13 @@ int main(void) {
 	}
 	return 0;
 }
+
+# switch문이 아니라 그냥 '+'한 후 무한 if문으로도 가능
+# arr안 쓰고 변수 하나로 sum시키는 방법도 가능(아래와 같음)
+/*
+for (int j = 0; j < 4; j++) {
+            int num;
+            cin >> num;
+            total += num;
+        }
+*/
