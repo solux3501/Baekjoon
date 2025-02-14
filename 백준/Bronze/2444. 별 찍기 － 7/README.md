@@ -89,3 +89,55 @@ void swap(int &a, int &b)
 - int* p : 변수 선언. p를 가르키는 포인터
 - 숫자만큼 메모리를 할당하고, 그 시작 주소(void*)를 반환
 - (int*) : 형 변환. malloc이 반환하는 void*를 int*로 변환하겠다는 의미
+
+  # 2309 일곱 난쟁이
+- #include <algorithm> 헤더 선언으로 'sort'사용
+- #include <numeric> 헤더 선언으로 'accumulate' 사용
+- while 사용 시에도 괄호 써야함.  Python이랑 헷갈리지 말 것
+- C++에서도 'and, or, not' 사용 가능. 다만 대부분에 코드에서는 '&&,||, !' 사용
+
+#1267 핸드폰 요금
+
+#include <cmath> 선언 : 수학 관련 헤더. 반올림, 제곱근, 절대값 계산 시 사용
+- ceil(N) : 올림
+- floor(N) : 내림
+- round(N) : 반올림 (= floor(N+0.5))
+
+#2576 홀수
+- #include <algorithm> 선언
+- min(a,b) : a와 b 중 최소값
+- max(a, b) : a와 b 중 최대값
+- 여러개 확인 시 : max({a, b, c, d...})
+
+#Vector
+- 뜻은 '운반하다'. 수학에서는 크기와 방향을 가진 값을 의미하며, 프로그래밍에서는 연속적으로 저장하면서 '운반'하는 역할을 해서 명명
+- STL(Standard Template Library)의 컨테이너 중 하나
+- 동적 배열 형태의 자료 구조(= 크기가 자동으로 조정. 배열과 유사하나 보다 유연)
+- 내부적으로 메모리를 재할당할 때, 기존 크기의 2배로 증가시킴
+- 빠른 인덱스 접근 가능
+- 끝 단에서 push, pop 기능은 매우 빠름
+- 반복자(iterator) 지원 : begin, end
+- vector와 queue 사용 방식 상에는 비슷함. 다만 vector의 경우 메모리가 물리적으로 연속적, queue의 경우 정크데이터들을 포인터(주소)로 일일이 연결. 따라서 queue의 경우 추가적인 메모리 사용이 있음
+
+<사용 방법>
+- #include <vector> 헤더 선언
+- vecotr<int> v : 비어있는 벡터 v 선언
+- vecotr<int> v(N) : v선언. 길이는 N, 내부는 '0'으로 초기화
+- vecotr<int> v(N, 1) : 위와 동일. 내부는 '1'로 초기화
+- vector<int> vCopy(v) : v를 복사한  vCopy 벡터 생성
+- v[idx] : v의 idx 위치의 데이터 참조
+- v.at[idx] : 위와 동일. 더 느리지만 범위 초과를 방지해줌
+- v.front() : 1번째 데이터 참조
+- v.back() : 마지막 데이터 참조
+- v.begin() : 1번째 데이터를 가르킴(포인터와 비슷한 iterator)
+- v.end() : 마지막 데이터 가리킴
+- v.push_back(N) : 마지막 데이터에 N 삽입
+- v.pop_back() : 마지막 데이터 제거
+- v.clear() : 데이터 초기ㅣ화
+- v.reserve(N) : N개의 데이터 저장 공간 동적 할당
+- v.capacity() : 데이터에 할당된 메모리
+- v.size() : 위에 것에서 데이터가 실제로 들어간 메모리량
+- v2.swap(v1) : v1과 v2의 내용 전부 맞교환
+- v.insert(5, 2) : 5번째 위치에 2를 삽입
+- v.insert(5, 2, 3) : 5번째 위치에 2를 3개 삽입
+- v.empty() : v를 비움 
