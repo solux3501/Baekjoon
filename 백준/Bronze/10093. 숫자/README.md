@@ -22,6 +22,32 @@
 
  <p>두 정수 A와 B가 주어진다.</p>
 
+
+
+
+ 10093 숫자
+- 파이썬과 다르게 자동으로 자료형을 바꿔주지 않음
+* int -> long으로 선언
+
+추가 : 참조에 의한 호출(call by reference)
+void swap(int &a, int &b);
+
+int main()
+{
+    int a= 10, b = 20;
+    swap(a, b);
+    return 0;
+}
+void swap(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
+- 매개 변수에만 '&'표시. 주소 참조
+- 매개 변수 선언 시 항상 자료형 선언 필요
+- 나머지는 그냥 변수명만 입력
+
 ### 출력 
 
  <p>첫째 줄에 두 수 사이에 있는 수의 개수를 출력한다.</p>
