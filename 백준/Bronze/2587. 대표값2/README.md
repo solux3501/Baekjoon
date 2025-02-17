@@ -34,3 +34,13 @@
 
  <p>첫째 줄에는 평균을 출력하고, 둘째 줄에는 중앙값을 출력한다. 평균과 중앙값은 모두 자연수이다.</p>
 
+
+#2587 대표값2
+
+#include <algorithm> 선언 : 정렬, 검색, 변형, 제거, 비교 등 데이터 조작 알고리즘
+#include <numeric> 선언 : 수치 연산이 있는 알고리즘 제공
+- sum = accumulate(시작 지점, 끝 지점, 초기값=기본값)
+ * begin(), end() : 괄호 안의 가장 처음과 끝. 즉 arr과 arr+size와 같은 의미
+- reduce는 accumulate와 같지만 각각 병렬 연산, 순차적 연산이라는 강점
+- size 유동적으로 설정 방법 : sizeof(배열)/sizeof(자료형)
+
