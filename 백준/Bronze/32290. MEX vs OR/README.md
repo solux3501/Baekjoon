@@ -1,5 +1,5 @@
 # [Bronze I] MEX vs OR - 32290 
-
+1
 [문제 링크](https://www.acmicpc.net/problem/32290) 
 
 ### 성능 요약
