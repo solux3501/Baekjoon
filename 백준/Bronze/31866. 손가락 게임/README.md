@@ -37,3 +37,4 @@
 
  <p>첫 번째 줄에 준성이 이겼다면 <span style="color:#e74c3c;"><code>></code></span>, 익준이 이겼다면 <span style="color:#e74c3c;"><code><</code></span>, 승패를 가릴 수 없었다면 <span style="color:#e74c3c;"><code>=</code></span>을 출력한다.</p>
 
+일요일
