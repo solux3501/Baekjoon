@@ -57,3 +57,4 @@ int main()
     return 0;
 
 }
+2문제 완료
