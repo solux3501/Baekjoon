@@ -34,3 +34,4 @@
 
  <p>Output the minimal morning flight cost in honey barrels. Since there is no smaller denomination, you must output the minimal integer number of honey barrels that would be sufficient to support the flight.</p>
 
+완료
